@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.some-class {
+  background: linear-gradient(
+    45deg,
+    rgba(29, 236, 197, 0.7),
+    rgba(91, 14, 214, 0.7) 100%
+  );
+}
+
+.banner-class {
+  height: calc(100vh - 5rem);
+}
+
+.check-box {
+  border-width: 2px;
+  border-color: black;
+}
+
+@font-face {
+  font-family: "Sk-Modernist";
+  src: url("../src/assets/fonts/Sk-Modernist-Regular.otf");
+  font-family: "Sk-Modernist-bold";
+  src: url("../src/assets/fonts/Sk-Modernist-Bold.otf");
+  font-family: "Sk-Modernist-mono";
+  src: url("../src/assets/fonts/Sk-Modernist-Mono.otf");
+  font-family: "kaushanScript-Regular";
+  src: url("../src/assets/fonts/KaushanScript-Regular.ttf");
+  font-family: "Montserrat-Italic-VariableFont_wght";
+  src: url("../src/assets/fonts/Montserrat-Italic-VariableFont_wght.ttf");
+
+  font-family: "Montserrat-Regular";
+  src: url("../src/assets/fonts/Montserrat-Regular.ttf");
+}
+
+/* for input field with number not to show increment decrement arrow */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
